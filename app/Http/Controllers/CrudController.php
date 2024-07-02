@@ -17,6 +17,7 @@ class CrudController extends Controller
     public function index(): View
     {
         $dataArray = Crud::paginate(10);
+        $data = 123;
         return view('index', compact('dataArray'));
     }
 
